@@ -4,9 +4,9 @@ import { useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 
 const PROJECTS = [
-  { id: 1, name: "Cape Meridian",          location: "Malibu, California",       year: "2023", type: "Beachfront Residences", units: "24 Units"  },
+  { id: 1, name: "Cape Sravan",            location: "Malibu, California",       year: "2023", type: "Beachfront Residences", units: "24 Units"  },
   { id: 2, name: "Villa Solano",            location: "Santa Barbara, California", year: "2022", type: "Clifftop Villas",       units: "12 Villas" },
-  { id: 3, name: "The Meridian Residences", location: "Manhattan Beach, CA",       year: "2021", type: "Urban Coastal",         units: "48 Units"  },
+  { id: 3, name: "The Sravan Residences",   location: "Manhattan Beach, CA",       year: "2021", type: "Urban Coastal",         units: "48 Units"  },
   { id: 4, name: "Pacific Point",           location: "Laguna Beach, California",  year: "2020", type: "Headland Estates",      units: "8 Estates" },
   { id: 5, name: "Azure Shores",            location: "Coronado, California",      year: "2019", type: "Waterfront Terrace",    units: "32 Units"  },
 ];
@@ -17,7 +17,7 @@ export function ProjectsSection() {
   const [hovered, setHovered] = useState<number | null>(null);
 
   return (
-    <section ref={ref} className="relative bg-black py-28 md:py-40 px-8 md:px-14">
+    <section id="portfolio" ref={ref} className="relative bg-black py-28 md:py-40 px-8 md:px-14">
       <div className="max-w-screen-xl mx-auto">
 
         {/* Header */}

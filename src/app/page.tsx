@@ -7,6 +7,7 @@ import { Navigation }          from "@/components/layout/Navigation";
 import { HeroSection }         from "@/components/sections/HeroSection";
 import { TestimonialSection }  from "@/components/sections/TestimonialSection";
 import { ScrollSection }       from "@/components/sections/ScrollSection";
+import { ProfileSection }      from "@/components/sections/ProfileSection";
 import { AboutSection }        from "@/components/sections/AboutSection";
 import { StatsSection }        from "@/components/sections/StatsSection";
 import { ProjectsSection }     from "@/components/sections/ProjectsSection";
@@ -38,6 +39,7 @@ export default function Home() {
         <ScrollSection prevReady={testimonialReady} />
 
         {/* ── Normal sections ── */}
+        <ProfileSection />
         <AboutSection />
         <StatsSection />
         <ProjectsSection />

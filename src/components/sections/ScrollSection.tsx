@@ -192,7 +192,7 @@ export function ScrollSection({ prevReady }: Props) {
               {[
                 { text: "Free Consultation",      accent: true  },
                 { text: "Beachfront Residences",   accent: false },
-                { text: "27+ Years of Excellence", accent: false },
+                { text: "1+ Years of Excellence", accent: false },
                 { text: "Clifftop Villas",          accent: false },
                 { text: "Book a Site Visit",        accent: true  },
                 { text: "Urban Coastal Homes",      accent: false },

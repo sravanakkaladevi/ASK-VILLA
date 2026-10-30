@@ -37,7 +37,7 @@ export function AboutSection() {
           >
             <span className="w-6 h-px bg-gold" />
             <p className="font-sans text-gold text-[10px] uppercase" style={{ letterSpacing: "0.28em" }}>
-              About Meridian
+              About Sravan Co.
             </p>
           </motion.div>
 
@@ -63,7 +63,7 @@ export function AboutSection() {
             initial={{ opacity: 0, y: 16 }} animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.32 }}
           >
-            For over two decades, Meridian Development Group has designed and delivered homes that don't merely occupy the coastline — they belong to it. We build where others hesitate, because we understand the forces at play.
+            For over two decades, Sravan Co. has designed and delivered homes that don't merely occupy the coastline — they belong to it. We build where others hesitate, because we understand the forces at play.
           </motion.p>
 
           <motion.p

@@ -18,7 +18,7 @@ export function ContactSection() {
   };
 
   return (
-    <section ref={ref} className="relative bg-black py-28 md:py-40 px-8 md:px-14 overflow-hidden">
+    <section id="contact" ref={ref} className="relative bg-black py-28 md:py-40 px-8 md:px-14 overflow-hidden">
 
       {/* Background watermark */}
       <span
@@ -26,7 +26,7 @@ export function ContactSection() {
         style={{ fontSize: "clamp(8rem, 18vw, 22rem)", opacity: 0.04, lineHeight: 1 }}
         aria-hidden
       >
-        MDG
+        SC
       </span>
 
       <div className="max-w-screen-xl mx-auto grid md:grid-cols-2 gap-16 md:gap-28">
@@ -51,7 +51,7 @@ export function ContactSection() {
             transition={{ duration: 0.85, delay: 0.1 }}
           >
             Begin your<br />
-            <em style={{ color: "#c9a96e", opacity: 0.85 }}>Meridian</em><br />
+            <em style={{ color: "#c9a96e", opacity: 0.85 }}>Sravan Co.</em><br />
             journey.
           </motion.h2>
 
@@ -68,9 +68,9 @@ export function ContactSection() {
             transition={{ duration: 0.7, delay: 0.38 }}
           >
             {[
-              { label: "Address", value: "12 Coastal Drive, Suite 800\nMalibu, CA 90265" },
-              { label: "Phone",   value: "+1 (310) 555-0198" },
-              { label: "Email",   value: "inquiries@meridiandev.com" },
+              { label: "Address", value: "Hyderabad, India" },
+              { label: "Phone",   value: "+91 **********" },
+              { label: "Email",   value: "railucccha@gmail.com" },
             ].map((d) => (
               <div key={d.label} className="border-t border-white/[0.14] py-5">
                 <p

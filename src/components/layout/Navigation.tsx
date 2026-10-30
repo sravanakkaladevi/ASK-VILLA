@@ -3,33 +3,24 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 
-const NAV_ITEMS = ["Home", "About", "Portfolio", "Services", "Contact"];
-
-const SOCIALS = [
-  {
-    label: "Facebook",
-    icon: <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />,
-  },
-  {
-    label: "Instagram",
-    icon: (
-      <>
-        <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
-        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-      </>
-    ),
-  },
-  {
-    label: "X",
-    icon: (
-      <path d="M4 4l16 16M4 20L20 4" />
-    ),
-  },
+const NAV_ITEMS = [
+  { label: "Home", href: "#hero" },
+  { label: "About", href: "#about" },
+  { label: "Portfolio", href: "#portfolio" },
+  { label: "Services", href: "#services" },
+  { label: "Contact", href: "#contact" },
 ];
 
 export function Navigation() {
   const [active, setActive] = useState("Home");
+
+  const scrollTo = (href: string, label: string) => {
+    setActive(label);
+    const el = document.querySelector(href);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <nav
@@ -40,22 +31,20 @@ export function Navigation() {
 
         {/* ── Left: Logo mark ── */}
         <a
-          href="/"
-          aria-label="Meridian Development Group"
+          href="#hero"
+          onClick={(e) => {
+            e.preventDefault();
+            scrollTo("#hero", "Home");
+          }}
+          aria-label="Sravan Co. / ASK-VILLA"
           className="pointer-events-auto flex-shrink-0 z-10 group"
         >
           <div
             className="glass-dark w-10 h-10 flex items-center justify-center rounded-xl transition-all duration-300 group-hover:scale-105"
           >
-            <svg width="18" height="16" viewBox="0 0 18 16" fill="none">
-              <path
-                d="M1 15V1L9 10L17 1V15"
-                stroke="rgba(255,255,255,0.9)"
-                strokeWidth="1.6"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
+            <span className="font-serif text-white/95 text-[13px] font-bold tracking-wider select-none">
+              ASK
+            </span>
           </div>
         </a>
 
@@ -63,18 +52,22 @@ export function Navigation() {
         <div
           className="glass-dark pointer-events-auto absolute left-1/2 -translate-x-1/2 flex items-center gap-0.5 p-1.5 rounded-full"
         >
-          {NAV_ITEMS.map((item) => (
-            <button
-              key={item}
-              onClick={() => setActive(item)}
+          {NAV_ITEMS.map(({ label, href }) => (
+            <a
+              key={label}
+              href={href}
+              onClick={(e) => {
+                e.preventDefault();
+                scrollTo(href, label);
+              }}
               className="relative px-4 py-[7px] rounded-full text-[12px] font-sans font-medium cursor-pointer transition-colors duration-200 whitespace-nowrap"
               style={{
-                color: active === item ? "#111110" : "rgba(255,255,255,0.75)",
+                color: active === label ? "#111110" : "rgba(255,255,255,0.75)",
                 letterSpacing: "0.025em",
               }}
             >
               {/* Sliding white active indicator */}
-              {active === item && (
+              {active === label && (
                 <motion.span
                   layoutId="active-nav"
                   className="absolute inset-0 rounded-full"
@@ -85,43 +78,51 @@ export function Navigation() {
                   transition={{ type: "spring", stiffness: 420, damping: 36 }}
                 />
               )}
-              <span className="relative z-10">{item}</span>
-            </button>
+              <span className="relative z-10">{label}</span>
+            </a>
           ))}
         </div>
 
-        {/* ── Right: socials + CTA ── */}
+        {/* ── Right: Instagram (_sravansravan824_) + CTA ── */}
         <div className="pointer-events-auto flex items-center gap-2.5 z-10">
 
-          {/* Social icon circles */}
-          <div className="hidden md:flex items-center gap-2">
-            {SOCIALS.map(({ label, icon }) => (
-              <a
-                key={label}
-                href="#"
-                aria-label={label}
-                className="glass-dark w-9 h-9 flex items-center justify-center rounded-full transition-all duration-300 hover:scale-110"
-              >
-                <svg
-                  width="13"
-                  height="13"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="rgba(255,255,255,0.80)"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  {icon}
-                </svg>
-              </a>
-            ))}
-          </div>
+          {/* Instagram link (X and Facebook removed) */}
+          <a
+            href="https://www.instagram.com/_sravansravan824_/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram: _sravansravan824_"
+            title="Instagram @_sravansravan824_"
+            className="glass-dark px-3 py-1.5 h-9 flex items-center gap-2 rounded-full transition-all duration-300 hover:scale-105 group"
+          >
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="rgba(255,255,255,0.85)"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="transition-colors group-hover:stroke-gold"
+            >
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+            </svg>
+            <span className="hidden md:inline text-[11px] font-sans text-white/80 group-hover:text-gold transition-colors">
+              _sravansravan824_
+            </span>
+          </a>
 
           {/* Consultation CTA */}
           <motion.a
-            href="#"
-            className="glass-white flex items-center gap-2.5 pl-5 pr-1.5 py-1.5 rounded-full text-[12px] font-sans font-semibold text-charcoal"
+            href="#contact"
+            onClick={(e) => {
+              e.preventDefault();
+              scrollTo("#contact", "Contact");
+            }}
+            className="glass-white flex items-center gap-2.5 pl-5 pr-1.5 py-1.5 rounded-full text-[12px] font-sans font-semibold text-charcoal cursor-pointer"
             style={{ letterSpacing: "0.03em" }}
             whileHover={{ scale: 1.04 }}
             whileTap={{ scale: 0.97 }}

@@ -39,13 +39,13 @@ export function StatsSection() {
   return (
     <section className="relative bg-black border-t border-b border-white/[0.12] py-24 md:py-32 px-8 md:px-14 overflow-hidden">
 
-      {/* MDG watermark */}
+      {/* SC watermark */}
       <span
         className="absolute inset-y-0 left-1/2 -translate-x-1/2 font-serif text-white select-none pointer-events-none flex items-center"
         style={{ fontSize: "clamp(12rem, 28vw, 32rem)", opacity: 0.04, whiteSpace: "nowrap", lineHeight: 1 }}
         aria-hidden
       >
-        MDG
+        SC
       </span>
 
       <div className="max-w-screen-xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-10 md:gap-0 relative z-10">

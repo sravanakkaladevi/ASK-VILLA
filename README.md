@@ -1,11 +1,11 @@
-# Meridian Development Group — Website
+# Sravan Co. — Website
 
 Premium beachfront real estate showcase built with Next.js 16, GSAP, Framer Motion, and Lenis.
 
 ## Quick Start
 
 ```bash
-cd meridian-dev
+cd house
 npm install
 npm run dev
 # → http://localhost:3000

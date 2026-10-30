@@ -18,12 +18,12 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Meridian Development Group — Premium Beachfront Residences",
+  title: "Sravan Co. — Premium Beachfront Residences",
   description:
-    "Since 1998, Meridian Development Group has crafted landmark beachfront residences where architecture meets the coastline. Discover our portfolio of premium homes built to endure.",
+    "Since 1998, Sravan Co. has crafted landmark beachfront residences where architecture meets the coastline. Discover our portfolio of premium homes built to endure.",
   keywords: ["luxury real estate", "beachfront homes", "residential developer", "premium construction"],
   openGraph: {
-    title: "Meridian Development Group",
+    title: "Sravan Co.",
     description: "Where life is built to be lived in.",
     type: "website",
   },

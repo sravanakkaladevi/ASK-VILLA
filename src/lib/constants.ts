@@ -1,12 +1,12 @@
 // ─── Site-wide constants ────────────────────────────────────────────────────
 
 export const SITE = {
-  name: "Meridian Development Group",
+  name: "Sravan Co.",
   tagline: "Where life is built to be lived in.",
   established: "Est. 1998",
-  address: "12 Coastal Drive, Suite 800, Malibu, CA 90265",
-  phone: "+1 (310) 555-0198",
-  email: "inquiries@meridiandev.com",
+  address: "Hyderabad, India",
+  phone: "+91 **********",
+  email: "railucccha@gmail.com",
 };
 
 // ─── Hero scroll phrases (tied to frame ranges 0–299) ───────────────────────
@@ -15,7 +15,7 @@ export const HERO_PHRASES = [
   { text: "Where life\nis built to\nbe lived in.", start: 0,    end: 0.24 },
   { text: "The coastline\nis our canvas.",          start: 0.27, end: 0.50 },
   { text: "Crafted with intent.\nBuilt to endure.", start: 0.53, end: 0.76 },
-  { text: "Meridian.\nEst. 1998.",                  start: 0.79, end: 1    },
+  { text: "Sravan Co.\nEst. 1998.",                 start: 0.79, end: 1    },
 ];
 
 // ─── Projects ───────────────────────────────────────────────────────────────
@@ -35,8 +35,8 @@ export interface Project {
 
 export const PROJECTS: Project[] = [
   {
-    id: "cape-meridian",
-    name: "Cape Meridian",
+    id: "cape-sravan",
+    name: "Cape Sravan",
     location: "Malibu, California",
     year: "2023",
     type: "Beachfront Residences",
@@ -82,8 +82,8 @@ export const PROJECTS: Project[] = [
     ],
   },
   {
-    id: "the-meridian-residences",
-    name: "The Meridian Residences",
+    id: "the-sravan-residences",
+    name: "The Sravan Residences",
     location: "Manhattan Beach, California",
     year: "2021",
     type: "Urban Coastal",
@@ -190,7 +190,7 @@ export const PROCESS_STEPS = [
     title: "Handover",
     subtitle: "Delivery",
     description:
-      "Our relationship with each homeowner doesn't end at settlement. We stand behind every Meridian home — for as long as it stands.",
+      "Our relationship with each homeowner doesn't end at settlement. We stand behind every Sravan Co. home — for as long as it stands.",
     image: "/images/process/process-6.jpg",
   },
 ];
@@ -206,9 +206,9 @@ export const STATS = [
 // ─── Testimonial ─────────────────────────────────────────────────────────────
 export const TESTIMONIAL = {
   quote:
-    "Meridian didn't build us a house. They gave us a place the family will fight over for generations.",
+    "Sravan Co. didn't build us a house. They gave us a place the family will fight over for generations.",
   author: "James & Catherine Whitmore",
-  location: "Cape Meridian, Malibu",
+  location: "Cape Sravan, Malibu",
   image: "/images/testimonial.jpg",
 };
 

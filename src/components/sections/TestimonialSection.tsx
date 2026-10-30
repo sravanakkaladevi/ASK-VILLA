@@ -108,7 +108,7 @@ export function TestimonialSection({ prevReady, onReady }: Props) {
           className="font-serif text-white max-w-4xl"
           style={{ fontSize: "clamp(1.5rem, 3vw, 3rem)", lineHeight: 1.35 }}
         >
-          "Meridian didn't build us a house.{" "}
+          "Sravan Co. didn't build us a house.{" "}
           <em className="text-white/60">
             They gave us a place the family will fight over for generations.
           </em>"
@@ -124,7 +124,7 @@ export function TestimonialSection({ prevReady, onReady }: Props) {
             className="font-sans text-white/35 text-[11px] mt-1"
             style={{ letterSpacing: "0.08em" }}
           >
-            Cape Meridian, Malibu — 2023
+            Cape Sravan, Malibu — 2023
           </p>
         </div>
       </div>
@@ -143,7 +143,7 @@ export function TestimonialSection({ prevReady, onReady }: Props) {
               {[
                 { text: "Free Consultation",      accent: true  },
                 { text: "Beachfront Residences",   accent: false },
-                { text: "27+ Years of Excellence", accent: false },
+                { text: "1+ Years of Excellence", accent: false },
                 { text: "Clifftop Villas",          accent: false },
                 { text: "Book a Site Visit",        accent: true  },
                 { text: "Urban Coastal Homes",      accent: false },

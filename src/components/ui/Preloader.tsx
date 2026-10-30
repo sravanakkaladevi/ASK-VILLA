@@ -40,7 +40,7 @@ export function Preloader({ progress, isComplete, onDone }: PreloaderProps) {
           className="pl-text font-serif text-white"
           style={{ fontSize: "clamp(2.8rem, 7vw, 7.5rem)", letterSpacing: "0.22em", opacity: 0 }}
         >
-          MERIDIAN
+          SRAVAN CO
         </h1>
 
         <div

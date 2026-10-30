@@ -9,7 +9,7 @@ const STEPS = [
   { num: "03", title: "Structure",  sub: "Build",           body: "Our master-build team holds tolerances that luxury joinery demands. We bring the architect's vision off the page with obsessive precision." },
   { num: "04", title: "Facade",     sub: "Envelope",        body: "Each facade is tuned to its environment — thermal mass, weather resistance, and the quality of light that enters every room." },
   { num: "05", title: "Interiors",  sub: "Finish",          body: "We collaborate with the world's finest interior studios. Every surface is chosen for its ability to age beautifully." },
-  { num: "06", title: "Handover",   sub: "Delivery",        body: "Our relationship doesn't end at settlement. We stand behind every Meridian home — for as long as it stands." },
+  { num: "06", title: "Handover",   sub: "Delivery",        body: "Our relationship doesn't end at settlement. We stand behind every Sravan Co. home — for as long as it stands." },
 ];
 
 export function ProcessSection() {
@@ -17,7 +17,7 @@ export function ProcessSection() {
   const inView = useInView(ref, { once: true, margin: "-10%" });
 
   return (
-    <section ref={ref} className="relative bg-black py-28 md:py-40 px-8 md:px-14 overflow-hidden">
+    <section id="services" ref={ref} className="relative bg-black py-28 md:py-40 px-8 md:px-14 overflow-hidden">
       <div className="max-w-screen-xl mx-auto">
 
         {/* ── Header ──────────────────────────────────────────────────── */}

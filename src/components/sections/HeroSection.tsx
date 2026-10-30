@@ -17,12 +17,12 @@ const HERO_TAGLINES = [
   { text: "Where life is\nbuilt to be\nlived in.",  start: 0,    end: 0.24 },
   { text: "The coastline\nis our canvas.",           start: 0.27, end: 0.50 },
   { text: "Crafted with intent.\nBuilt to endure.", start: 0.53, end: 0.76 },
-  { text: "Meridian.\nEst. 1998.",                  start: 0.79, end: 1    },
+  { text: "Sravan Co.\nEst. 1998.",                 start: 0.79, end: 1    },
 ];
 
 const STATS = [
   { value: "312+", label: "Homes\nDelivered" },
-  { value: "27+",  label: "Years of\nExcellence" },
+  { value: "1+",  label: "Years of\nExcellence" },
 ];
 
 interface HeroProps {
@@ -118,9 +118,9 @@ export function HeroSection({ onReady }: HeroProps) {
   // ── mobile ────────────────────────────────────────────────────────────────
   if (isMobile || isReduced) {
     return (
-      <section className="relative w-full h-screen overflow-hidden bg-charcoal">
+      <section id="hero" className="relative w-full h-screen overflow-hidden bg-charcoal">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/frames%201/ezgif-frame-001.jpg" alt="Meridian" className="absolute inset-0 w-full h-full object-cover" />
+        <img src="/frames%201/ezgif-frame-001.jpg" alt="Sravan Co." className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0" style={{ background: "linear-gradient(to top,rgba(26,26,24,0.9) 0%,rgba(26,26,24,0.2) 60%,transparent 100%)" }} />
         <div className="absolute bottom-14 left-6 right-6">
           <p className="text-white/50 font-sans text-[9px] uppercase mb-3" style={{ letterSpacing: "0.26em" }}>Est. 1998</p>
@@ -150,7 +150,7 @@ export function HeroSection({ onReady }: HeroProps) {
           ref={canvasRef}
           className="absolute inset-0 block w-full h-full"
           role="img"
-          aria-label="Meridian Development Group — cinematic sequence"
+          aria-label="Sravan Co. — cinematic sequence"
         />
 
         {/* Subtle vignette — lighter than before to let image breathe */}
@@ -306,7 +306,7 @@ export function HeroSection({ onReady }: HeroProps) {
                 {[
                   { text: "Free Consultation",      accent: true  },
                   { text: "Beachfront Residences",   accent: false },
-                  { text: "27+ Years of Excellence", accent: false },
+                  { text: "1+ Years of Excellence", accent: false },
                   { text: "Clifftop Villas",          accent: false },
                   { text: "Book a Site Visit",        accent: true  },
                   { text: "Urban Coastal Homes",      accent: false },
